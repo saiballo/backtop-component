@@ -5,7 +5,7 @@
 * Created: 21/07/2025 (14:15:03)
 * Created by: Lorenzo Saibal Forti <lorenzo.forti@gmail.com>
 *
-* Last update: 28/07/2025 (10:55:47)
+* Last update: 05/08/2025 (17:15:54)
 * Updated by: Lorenzo Saibal Forti <lorenzo.forti@gmail.com>
 *
 * Copyleft: 2025 - Tutti i diritti riservati
@@ -28,7 +28,7 @@ export const initShadowDom = (context) => {
 	// stili css
 	context.shadowRoot.adoptedStyleSheets = [setStyle()];
 
-	// codice di partenza prima dell'iframe video
+	// codice di partenza
 	context.shadowRoot.innerHTML = `
 
 		<button id="${idButton}" class="back-top fade d-none" part="back-top" aria-label="${context.ariaLabel}">

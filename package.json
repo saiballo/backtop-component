@@ -1,7 +1,7 @@
 {
-	"name": "html5-boilerplate",
-	"version": "1.0.0",
-	"description": "Boilerplate per lo sviluppo di prototipi statici. SASS e Esbuild si occupano di gestire la compilazione dei file css e javascript attraverso Gulp come task runner.",
+	"name": "backtop-button",
+	"version": "1.0.4",
+	"description": "An accessible Web Component to include a \"Back to Top\" button on your website. By setting some parameters you can customize the graphics and behavior of the component.",
 	"author": {
 		"name": "Lorenzo Saibal Forti",
 		"email": "lorenzo.forti@gmail.com"
@@ -9,7 +9,7 @@
 	"license": "MIT",
 	"repository": {
 		"type": "git",
-		"url": "git+https://URL"
+		"url": "git+https://github.com/saiballo/backtop-component"
 	},
 	"engines": {
 		"node": ">=16.0.0"

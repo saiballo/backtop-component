@@ -5,7 +5,7 @@
 * Created: 21/07/2025 (15:53:26)
 * Created by: Lorenzo Saibal Forti <lorenzo.forti@gmail.com>
 *
-* Last update: 25/07/2025 (19:28:23)
+* Last update: 01/09/2025 (11:13:19)
 * Updated by: Lorenzo Saibal Forti <lorenzo.forti@gmail.com>
 *
 * Copyleft: 2025 - Tutti i diritti riservati
@@ -146,10 +146,10 @@ export const handleClick = async (e, context) => {
 		await context.callbackBefore.call(this, e);
 	}
 
-	window.scroll({
+	window.scrollTo({
 		"top": scrollFromTop,
 		"left": 0,
-		"behavior": scrollBehavior
+		"behavior": window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : scrollBehavior
 	});
 
 	// controlla la fine dello scroll soprattutto quando il behavior è smooth
