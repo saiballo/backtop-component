@@ -4,7 +4,7 @@
 * Created: 30/04/2025 (16:26:32)
 * Created by: Lorenzo Saibal Forti <lorenzo.forti@gmail.com>
 *
-* Last update: 25/07/2025 (18:45:12)
+* Last update: 03/09/2025 (11:31:30)
 * Updated by: Lorenzo Saibal Forti <lorenzo.forti@gmail.com>
 *
 * Copyleft: 2024 - Tutti i diritti riservati
@@ -69,18 +69,6 @@ export const setStyle = () => {
 		.d-none
 		{
 			display: none;
-		}
-
-		.visually-hidden
-		{
-			border: 0;
-			clip: rect(0 0 0 0);
-			height: 1px;
-			margin: -1px;
-			overflow: hidden;
-			padding: 0;
-			position: absolute;
-			width: 1px;
 		}
 	`);
 

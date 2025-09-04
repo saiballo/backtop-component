@@ -13,7 +13,7 @@
 - [Features](#features)
 - [Installation](#installation)
 - [Web component usage](#web-component-usage)
-- [Parameters list](#parameters-list)
+- [Properties list](#properties-list)
 - [Default configuration](#default-configuration)
 - [Callbacks](#callbacks)
 - [CSS styles](#css-styles)
@@ -48,7 +48,7 @@ In this case you use the source file with `type="module"`.
 
 **N.B.** When using the file as a module, you need to put the `include` folder in the same path as the file. (see `/docs/assets/js/module` folder)
 ```
-<script type="module" src="module/backtop-button"></script>
+<script type="module" src="module/backtop-button.js"></script>
 ```
 
 3) **Import the script as "side-effect import"**
@@ -73,12 +73,12 @@ If you want to customize the SVG icon or the offset value (in pixels) beyond whi
 <backtop-button offset-show="300" custom-icon="./img/custom.svg"></backtop-button>
 ```
 
-### Parameters list
+### Properties list
 
 <table style="width:100%; border-collapse: collapse;">
 	<thead>
 		<tr>
-			<th style="border: 1px solid #ddd; padding: 8px;">Parameter</th>
+			<th style="border: 1px solid #ddd; padding: 8px;">Properties</th>
 			<th style="border: 1px solid #ddd; padding: 8px;">Description</th>
 			<th style="border: 1px solid #ddd; padding: 8px;">Default</th>
 		</tr>
@@ -164,7 +164,7 @@ The configuration to override must be placed before `<script src="backtop-button
 
 ### Callbacks
 
-2 callbacks are available to call: an asynchronous function when the button is clicked (`cbBefore()`) and one when the page scroll has occurred (`cbAfter()`). In this case it is convenient to assign an `id` to the component. Example code to use:
+2 asynchronous callbacks are available to call: a function when the button is clicked (`cbBefore()`) and one when the page scroll has occurred (`cbAfter()`). In this case it is convenient to assign an `id` to the component. Example code to use:
 
 ```
 <script>

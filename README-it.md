@@ -13,7 +13,7 @@
 - [Caratteristiche](#caratteristiche)
 - [Installazione](#installazione)
 - [Utilizzo web component](#utilizzo-web-component)
-- [Lista parametri](#lista-parametri)
+- [Lista proprietà](#lista-proprieta)
 - [Configurazione di default](#configurazione-di-default)
 - [Callback](#callback)
 - [Stili CSS](#stili-css)
@@ -48,7 +48,7 @@ In questo caso si usa il file sorgente con `type="module"`.
 
 **N.B.** Utilizzando il file come modulo è necessario mettere nella stesso path del file anche la cartella `include`. (vedi cartella `/docs/assets/js/module`)
 ```
-<script type="module" src="module/backtop-button"></script>
+<script type="module" src="module/backtop-button.js"></script>
 ```
 
 3) **Importare lo script, come "side-effect import"**
@@ -73,12 +73,12 @@ Se invece si volesse personalizzare l'icona SVG oppure il valore di offset (in p
 <backtop-button offset-show="300" custom-icon="./img/custom.svg"></backtop-button>
 ```
 
-### Lista parametri
+### Lista proprietà
 
 <table style="width:100%; border-collapse: collapse;">
 	<thead>
 		<tr>
-			<th style="border: 1px solid #ddd; padding: 8px;">Parametro</th>
+			<th style="border: 1px solid #ddd; padding: 8px;">Proprietà</th>
 			<th style="border: 1px solid #ddd; padding: 8px;">Descrizione</th>
 			<th style="border: 1px solid #ddd; padding: 8px;">Default</th>
 		</tr>
@@ -112,7 +112,7 @@ Se invece si volesse personalizzare l'icona SVG oppure il valore di offset (in p
 		<tr>
 			<td style="border: 1px solid #ddd; padding: 8px;">live-text-show</td>
 			<td style="border: 1px solid #ddd; padding: 8px;">Testo annunciato dagli screen reader quando il bottone compare in pagina (al caricamento oppure dopo scroll). Questo parametro non potrà mai essere vuoto. In caso venisse impostato a "" verrà usato il valore "back to top available". </td>
-			<td style="border: 1px solid #ddd; padding: 8px;">"Pulsante torna su disponibile"/td>
+			<td style="border: 1px solid #ddd; padding: 8px;">"Pulsante torna su disponibile"</td>
 		</tr>
 		<tr>
 			<td style="border: 1px solid #ddd; padding: 8px;">live-text-hide</td>
@@ -164,7 +164,7 @@ La configurazione da sovrascrivere va messa prima di `<script src="backtop-butto
 
 ### Callback
 
-Sono disponibili 2 callback da poter chiamare: una funzione asincrona quando viene cliccato il bottone (`cbBefore()`) e una quando è avvenuto lo scroll della pagina (`cbAfter()`). In questo caso è conveniente assegnare un `id` al component. Esempio di codice da utilizzare:
+Sono disponibili 2 callback asincrone da poter chiamare: una quando viene cliccato il bottone (`cbBefore()`) e una quando è avvenuto lo scroll della pagina (`cbAfter()`). In questo caso è conveniente assegnare un `id` al component. Esempio di codice da utilizzare:
 
 ```
 <script>

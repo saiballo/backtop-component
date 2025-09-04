@@ -38,10 +38,10 @@
 		"autoprefixer": "^10.4.21",
 		"browser-sync": "^3.0.4",
 		"cross-env": "^10.0.0",
-		"cssnano": "^7.1.0",
+		"cssnano": "^7.1.1",
 		"del": "^8.0.0",
-		"esbuild": "^0.25.8",
-		"esbuild-minify-templates": "^0.12.0",
+		"esbuild": "^0.25.9",
+		"esbuild-minify-templates": "^0.13.1",
 		"esbuild-plugin-replace": "^1.4.0",
 		"fast-glob": "^3.3.3",
 		"gulp": "^5.0.1",
@@ -55,7 +55,7 @@
 		"gulp-sourcemaps": "^3.0.0",
 		"micromatch": "^4.0.8",
 		"purgecss": "^7.0.2",
-		"sass": "^1.89.2",
+		"sass": "^1.92.0",
 		"through2": "^4.0.2",
 		"yargs": "^18.0.0"
 	}

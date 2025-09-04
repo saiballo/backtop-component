@@ -5,7 +5,7 @@
 * Created: 21/07/2025 (15:53:26)
 * Created by: Lorenzo Saibal Forti <lorenzo.forti@gmail.com>
 *
-* Last update: 01/09/2025 (11:13:19)
+* Last update: 04/09/2025 (12:20:16)
 * Updated by: Lorenzo Saibal Forti <lorenzo.forti@gmail.com>
 *
 * Copyleft: 2025 - Tutti i diritti riservati
@@ -60,6 +60,8 @@ const setLiveRegion = (context) => {
 		const region = document.createElement("div");
 		region.id = regionId;
 		region.setAttribute("aria-live", "polite");
+		// potrebbe cambiare una sola parola e non tutta la frase dentro live region. per questo uso aria-atomic in modo che il lettore annunci sempre tutta la frase
+		region.setAttribute("aria-atomic", "true");
 		region.setAttribute("role", "status");
 		region.setAttribute("style", "border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px;");
 		document.body.appendChild(region);
@@ -136,14 +138,12 @@ export const showHideButton = (context) => {
  */
 export const handleClick = async (e, context) => {
 
-	e.preventDefault();
-
 	const scrollFromTop = Number(context.fromTop);
 	const scrollBehavior = context.noSmooth ? "auto" : "smooth";
 
 	if (typeof context.callbackBefore === "function") {
 
-		await context.callbackBefore.call(this, e);
+		await context.callbackBefore(e);
 	}
 
 	window.scrollTo({
@@ -157,7 +157,7 @@ export const handleClick = async (e, context) => {
 
 	if (typeof context.callbackAfter === "function") {
 
-		context.callbackAfter.call(this, e);
+		await context.callbackAfter(e);
 	}
 };
 
