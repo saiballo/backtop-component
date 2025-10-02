@@ -5,15 +5,13 @@
 * Created: 21/07/2025 (14:15:03)
 * Created by: Lorenzo Saibal Forti <lorenzo.forti@gmail.com>
 *
-* Last update: 05/08/2025 (17:15:54)
+* Last update: 12/09/2025 (10:50:57)
 * Updated by: Lorenzo Saibal Forti <lorenzo.forti@gmail.com>
 *
 * Copyleft: 2025 - Tutti i diritti riservati
 *
 * Comments:
 */
-
-"use strict";
 
 import { setStyle } from "./setStyle.js";
 
