@@ -1,6 +1,6 @@
 {
 	"name": "backtop-button",
-	"version": "1.0.4",
+	"version": "1.0.5",
 	"description": "An accessible Web Component to include a \"Back to Top\" button on your website. By setting some parameters you can customize the graphics and behavior of the component.",
 	"author": {
 		"name": "Lorenzo Saibal Forti",
